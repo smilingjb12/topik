@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { finalize } from 'rxjs/operators';
 
-import { QuoteService } from './quote.service';
+import { Test } from "@app/home/test.model";
+import { RouterModule, Routes, Router } from '@angular/router';
+import { TestService } from './test.service';
 
 @Component({
   selector: 'app-home',
@@ -9,17 +11,21 @@ import { QuoteService } from './quote.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  tests: Test[];
 
-  quote: string;
-  isLoading: boolean;
+  constructor(private router: Router,
+    private testService: TestService) { }
 
-  constructor(private quoteService: QuoteService) { }
+  goToTopik1(test: Test) {
+    this.router.navigate(['/tests', test.id]);
+  }
+
+  goToTopik2(test: Test) {
+    this.router.navigate(['/tests', test.id]);
+  }
 
   ngOnInit() {
-    this.isLoading = true;
-    this.quoteService.getRandomQuote({ category: 'dev' })
-      .pipe(finalize(() => { this.isLoading = false; }))
-      .subscribe((quote: string) => { this.quote = quote; });
+    this.tests = this.testService.getTests();
   }
 
 }
