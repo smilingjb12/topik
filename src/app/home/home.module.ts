@@ -9,6 +9,7 @@ import { HomeComponent } from './home.component';
 import { QuoteService } from './quote.service';
 import { TestViewComponent } from './test-view/test-view.component';
 import { TestService } from './test.service';
+import { QuestionViewComponent } from './test-view/question-view/question-view.component';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { TestService } from './test.service';
   ],
   declarations: [
     HomeComponent,
-    TestViewComponent
+    TestViewComponent,
+    QuestionViewComponent
   ],
   providers: [
     QuoteService,

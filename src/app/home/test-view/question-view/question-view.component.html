@@ -1,0 +1,33 @@
+<div class="row">
+    <div class="col-lg-12">
+        <p class="text text-muted">{{question.instructions}}</p>
+    </div>
+</div>
+<div class="row" *ngIf="question.audioUrl">
+    <div class="col-sm-12">
+        <audio controls #audio>
+            <source src="{{question.audioUrl}}"/>
+        </audio>
+    </div>
+</div>
+<div class="row" *ngIf="question.text">
+    <div class="col-lg-12">
+        <p class="text">{{question.text}}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item" *ngFor="let answer of question.answers">
+                <div class="answer">
+                    <button type="button" class="btn"
+                            (click)="selectAnswer(answer)"
+                            [ngClass]="getAnswerNgClass(answer)">
+                        <span class="text" [innerHTML]="generateQuestionNumberTitle(answer)"></span>
+                    </button>
+                    <div class="text answer-text">{{answer.text}}</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
