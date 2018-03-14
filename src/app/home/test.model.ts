@@ -7,7 +7,6 @@ export interface Question {
   id: number;
   text: string;
   instructions: string;
-  isAnswered: boolean;
   points: number;
   answers: Answer[];
 }

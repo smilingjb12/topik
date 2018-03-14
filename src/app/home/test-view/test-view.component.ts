@@ -51,6 +51,5 @@ export class TestViewComponent implements OnInit {
 
   selectAnswer(answer: Answer) {
     this.selectedAnswer = answer;
-    this.selectedQuestion.isAnswered = true;
   }
 }
