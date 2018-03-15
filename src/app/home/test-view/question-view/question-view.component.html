@@ -4,7 +4,7 @@
     </div>
 </div>
 <div class="row" *ngIf="question.audioUrl">
-    <div class="col-sm-12">
+    <div class="col-12 col-sm-10 col-md-6 col-lg-6">
         <audio controls #audio>
             <source src="{{question.audioUrl}}"/>
         </audio>
@@ -34,9 +34,9 @@
                             [ngClass]="getAnswerNgClass(answer)">
                         <span class="text" [innerHTML]="generateQuestionNumberTitle(answer)"></span>
                     </button>
-                    <div *ngIf="answer.text" class="text answer-text">{{answer.text}}</div>
+                    <div *ngIf="answer.text" class="text answer-text" (click)="selectAnswer(answer)">{{answer.text}}</div>
                     <div class="col-lg-6 col-sm-8 col-xs-12" *ngIf="answer.imageUrl">
-                        <img class="img-fluid" [src]="answer.imageUrl"/>
+                        <img class="img-fluid" [src]="answer.imageUrl" (click)="selectAnswer(answer)"/>
                     </div>
                 </div>
             </li>
