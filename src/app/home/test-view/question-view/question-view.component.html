@@ -36,7 +36,7 @@
                     </button>
                     <div *ngIf="answer.text" class="text answer-text" (click)="selectAnswer(answer)">{{answer.text}}</div>
                     <div class="col-lg-6 col-sm-8 col-xs-12" *ngIf="answer.imageUrl">
-                        <img class="img-fluid" [src]="answer.imageUrl" (click)="selectAnswer(answer)"/>
+                        <img class="img-fluid answer-image" [src]="answer.imageUrl" (click)="selectAnswer(answer)"/>
                     </div>
                 </div>
             </li>

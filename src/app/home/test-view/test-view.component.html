@@ -17,10 +17,10 @@
     <div class="col-lg-12">
         <div class="row next-prev">
             <button *ngIf="selectedQuestion.id != 1"
-                    type="button" class="btn btn-light btn-lg col-12 col-sm-2 order-2 order-sm-1"
+                    type="button" class="btn btn-light btn-lg col-lg-2 col-12 col-sm-3 order-2 order-sm-1"
                     (click)="goToPreviousQuestion()">Previous</button>
             <button *ngIf="selectedQuestion.id != test.questions.length"
-                    type="button" class="btn btn-light btn-lg col-12 col-sm-2 order-1 order-sm-2 btn-next"
+                    type="button" class="btn btn-light btn-lg col-lg-2 col-12 col-sm-3 order-1 order-sm-2 btn-next"
                     (click)="goToNextQuestion()">Next</button>
         </div>
     </div>

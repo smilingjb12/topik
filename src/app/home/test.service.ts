@@ -7,7 +7,7 @@ export class TestService {
   listening56Instructions: string = '다음을 듣고 다음 말에 이어지는 것을 고르십시오.';
   listening710Instructions: string = '여기는 어디입니까? 알맞은 것을 고르십서오.';
   listening1114Instructions: string = '다음은 무엇에 대해 말하고 있습니까? 알맞은 것을 고르십시오.';
-  listening1516Instructions: string = '다음 대화를 듣고 알맟은 그림을 고르십시오.';
+  listening1516Instructions: string = '다음 대화를 듣고 알맞은 그림을 고르십시오.';
   listening1721Instructions: string = '다음을 듣고 대화 내용과 같은 것을 고르십시오.';
   listening2224Instructions: string = '다음을 듣고 대화 내용과 같은 것을 고르십시오.'
   listening2530Instructions: string = '다음을 듣고 물음에 답하십시오.';
@@ -283,7 +283,7 @@ export class TestService {
             },
             {
               id: 4,
-              text: '우제국',
+              text: '우체국',
               isCorrect: false
             }
           ]
@@ -556,22 +556,22 @@ export class TestService {
           answers: [
             {
               id: 1,
-              text: '여자는 돈을 찾았습니다.',
+              text: '여자는 미술관에서 일하고 있습니다.',
               isCorrect: false
             },
             {
               id: 2,
-              text: '남자는 지금 은행에 있습니다.',
+              text: '남자는 미술관 안을 구경하고 있습니다.',
               isCorrect: false
             },
             {
               id: 3,
-              text: '여자는 은행에 가려고 합니다.',
+              text: '남자는 여자에게 사진기를 빌리려고 합니다.',
               isCorrect: true
             },
             {
               id: 4,
-              text: '남자는 은행에 가는 길을 모릅니다.',
+              text: '여자는 사진기를 가지고 미술관에 들어갔습니다.',
               isCorrect: false
             }
           ]
@@ -655,7 +655,7 @@ export class TestService {
           answers: [
             {
               id: 1,
-              text: '여자는 회자 일이 일찍 끝납니다.',
+              text: '여자는 희자 일이 일찍 끝납니다.',
               isCorrect: false
             },
             {
@@ -679,6 +679,10 @@ export class TestService {
           id: 22,
           text: null,
           instructions: this.listening2224Instructions,
+          script: `여자: 저 다음 주부터 백화점 안에 있는 옷 가게에서 일하기로 했어요.
+남자: 잘됐네요. 그런데 매일 일해요?
+여자: 아니요. 월요일부터 금요일까지 하루에 세 시간씩만 하면 돼요.
+남자: 공부와 일을 같이 하려면 힘즐겠어요.`,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1cFe736jkJ7_peg_OdoFfpRHWivdr6L2V',
           answers: [
@@ -708,6 +712,10 @@ export class TestService {
           id: 23,
           text: null,
           instructions: this.listening2224Instructions,
+          script: `남자: 저 식당 음식이 정말 맛있나 봐요.
+여자: 아, 저기요. 삼계탕만 파는 식당인데 항상 사람들이 많아요.
+남자: 우리 회사 근처에 저런 유면한 식당이 있었네요. 다음에 삼계탕 한번 먹으러 가야겠어요.
+여자: 저 식당은 그날 준비한 걸 다 팔면 문을 닫아요. 그러니까 늦게 가면 못 드실 수도 있어요.`,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=18IH4GCQ0iCJvXMLm7S1b_BcI97b8h-Ef',
           answers: [
@@ -737,6 +745,10 @@ export class TestService {
           id: 24,
           text: null,
           instructions: this.listening2224Instructions,
+          script: `남자: 여행 가방 하나 사려고 하는데요.
+여자: (잠시 후) 이 가방은 어떼세요? 가볍고 튼튼해서 사람들이 많이 사요.
+남자: (잠시 후) 주머니도 많아서 펀하겠네요. 근데 이거 말고 다른 색깔은 없어요?
+여자: 있어요. 여기 여러 가지 색깔이 있으니까 구경하세요.`,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1RoLGk-PM-bbeO4tzwh9uZTy0ZujJlYH6',
           answers: [
@@ -757,7 +769,7 @@ export class TestService {
             },
             {
               id: 4,
-              text: '이 가방은 튼튼하지만 부겁습니다.',
+              text: '이 가방은 튼튼하지만 무겁습니다.',
               isCorrect: false
             }
           ]
@@ -766,6 +778,7 @@ export class TestService {
           id: 25,
           text: '어떤 이야기를 하고 있는지 고르십시오.',
           instructions: this.listening2530Instructions,
+          script: `여자: 자, 여러문. 호텔에 도착했습니다. 많이 피곤하시죠? 먼저 방에 가계시면 짐들을 가져다 드리겠습니다. 식사는 지하 1충 식당에서 하시면 됩니다. 호텔에 있는 수영장은 무료로 이용하실 수 있습니다. 그리고 필요한 것이 있으면 저게에 전화해 주십시오. 제 방은 301호입니다. 그럼 편히 쉬십시오.`,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1Q_4plt_bsXjvtzjCh4j54DnrN8ZG3rJy',
           answers: [
@@ -795,6 +808,7 @@ export class TestService {
           id: 26,
           text: '들은 내용과 같은 것을 고르십시오.',
           instructions: this.listening2530Instructions,
+          script: `여자: 자, 여러문. 호텔에 도착했습니다. 많이 피곤하시죠? 먼저 방에 가계시면 짐들을 가져다 드리겠습니다. 식사는 지하 1충 식당에서 하시면 됩니다. 호텔에 있는 수영장은 무료로 이용하실 수 있습니다. 그리고 필요한 것이 있으면 저게에 전화해 주십시오. 제 방은 301호입니다. 그럼 편히 쉬십시오.`,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1Q_4plt_bsXjvtzjCh4j54DnrN8ZG3rJy',
           answers: [
@@ -824,6 +838,11 @@ export class TestService {
           id: 27,
           text: '두 사람이 무엇에 대해 이야기를 하고 있는지 고르십시오.',
           instructions: this.listening2530Instructions,
+          script: `여자: 부산에 소포를 보내려고 하는데 지금 보내면 언제 도착해요?
+남자: 지금 보내시면 모레 도착할 거예요.
+여자: 오늘 저녁까지 도착할 수는 없을까요? 제가 좀 급해서요.
+남자: 오전에 모내셨으면 오늘 안에 도착하는데 지금은 너무 늦었어요. 지금은 특급으로 보내도 내일 오전에 도착해요.
+여자: 아, 그래요? 내일 오전까지 들어갈 수 있으면 그걸로 해 주세요.`,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1KKIpqOLp3Hir0cADSdyFAZlTh4vEnhnp',
           answers: [
@@ -853,6 +872,11 @@ export class TestService {
           id: 28,
           text: '들은 내용과 같은 것을 소르십시오.',
           instructions: this.listening2530Instructions,
+          script: `여자: 부산에 소포를 보내려고 하는데 지금 보내면 언제 도착해요?
+남자: 지금 보내시면 모레 도착할 거예요.
+여자: 오늘 저녁까지 도착할 수는 없을까요? 제가 좀 급해서요.
+남자: 오전에 모내셨으면 오늘 안에 도착하는데 지금은 너무 늦었어요. 지금은 특급으로 보내도 내일 오전에 도착해요.
+여자: 아, 그래요? 내일 오전까지 들어갈 수 있으면 그걸로 해 주세요.`,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1KKIpqOLp3Hir0cADSdyFAZlTh4vEnhnp',
           answers: [
@@ -882,6 +906,12 @@ export class TestService {
           id: 29,
           text: '두 사람은 왜 김치를 만듭니까?',
           instructions: this.listening2530Instructions,
+          script: `여자: 민수 씨, 이번 주말에 '사랑나누기' 모임이 있는데 같이 가실래요?
+남자: '사랑나누기'요? 그게 뭐예요?
+여자: 혼자 사시는 할머니들을 도와 드리는 모임이에요.
+남자: 아, 그래요? 근데 무슨 일을 도와 드려요?
+여자: 청소를 하거나 음식을 만들어 드려요. 이번 주말엔 김치를 담가서드릴 거예요.
+남자: 좋은 일을 하시네요. 저도 이번 모임에 가 보고 싶어요. 김치를 담가 본 적은 없지만 열심히 해 볼게요.`,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1ONBD3WG33EOcW8lg1lOM4FIDX1qxg_zC',
           answers: [
@@ -911,6 +941,12 @@ export class TestService {
           id: 30,
           text: '들은 내용과 같은 것을 소르십시오.',
           instructions: this.listening2530Instructions,
+          script: `여자: 민수 씨, 이번 주말에 '사랑나누기' 모임이 있는데 같이 가실래요?
+남자: '사랑나누기'요? 그게 뭐예요?
+여자: 혼자 사시는 할머니들을 도와 드리는 모임이에요.
+남자: 아, 그래요? 근데 무슨 일을 도와 드려요?
+여자: 청소를 하거나 음식을 만들어 드려요. 이번 주말엔 김치를 담가서드릴 거예요.
+남자: 좋은 일을 하시네요. 저도 이번 모임에 가 보고 싶어요. 김치를 담가 본 적은 없지만 열심히 해 볼게요.`,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1ONBD3WG33EOcW8lg1lOM4FIDX1qxg_zC',
           answers: [
@@ -937,6 +973,14 @@ export class TestService {
           ]
         },
       ]
+    },
+    {
+      id: 36,
+      questions: []
+    },
+    {
+      id: 37,
+      questions: []
     }
   ];
 
