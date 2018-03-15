@@ -21,7 +21,7 @@ export class TestService {
           script: `여자: 우산이 있어요?`,
           instructions: this.listening14Instructions,
           points: 4,
-          audioUrl: 'https://drive.google.com/uc?export=download&id=1hcLXjzV6O8M5z-lrBpCpJNWtpDM9vvAa',
+          audioUrl: 'https://drive.google.com/uc?export=download&id=1L4lr8EMC5q7QsTASa9spgczFfWsNhnZK',
           answers: [
             {
               id: 1,
@@ -646,7 +646,9 @@ export class TestService {
           id: 21,
           text: null,
           script: `여자: 여귄을 만들어야 하는데요. 회사 일이 늦게 끝나서 갈 시간이 없어요.
-`,
+남자: 요즘은 주말에도 여귄을 신청할 수 있는 곳이 있어요. 저도 주말에 거기 가서 여권을 만들었어요.
+여자: 그래요? 어디로 가면 돼요?
+남자: 만들어 주는 데가 여러 곳 있어요. 인터넷에서 찾아보고 가까운 곳으로 가세요.`,
           instructions: this.listening1721Instructions,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1QsN-Q4oYxW0poNFXqjqojkfeMoqeYnjA',
