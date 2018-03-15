@@ -18,4 +18,5 @@ export interface Answer {
   text: string;
   isCorrect: boolean;
   isTouched?: boolean;
+  imageUrl?: string;
 }

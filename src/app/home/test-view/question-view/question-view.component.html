@@ -25,7 +25,10 @@
                             [ngClass]="getAnswerNgClass(answer)">
                         <span class="text" [innerHTML]="generateQuestionNumberTitle(answer)"></span>
                     </button>
-                    <div class="text answer-text">{{answer.text}}</div>
+                    <div *ngIf="answer.text" class="text answer-text">{{answer.text}}</div>
+                    <div class="col-lg-6 col-sm-8 col-xs-12" *ngIf="answer.imageUrl">
+                        <img class="img-fluid" [src]="answer.imageUrl"/>
+                    </div>
                 </div>
             </li>
         </ul>
