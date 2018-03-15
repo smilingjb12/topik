@@ -8,12 +8,16 @@ import { Question, Answer } from '../../test.model';
 })
 export class QuestionViewComponent implements OnInit, OnChanges {
   @Input() question: Question;
-
   @ViewChild('audio') audioElement: any;
+  scriptIsVisible: boolean = false;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleScript(question: Question) {
+    question.scriptIsVisible = !question.scriptIsVisible;
   }
 
   ngOnChanges(changes: SimpleChanges): void {

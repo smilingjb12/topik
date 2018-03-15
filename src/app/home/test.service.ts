@@ -18,6 +18,7 @@ export class TestService {
         {
           id: 1,
           text: null,
+          script: `여자: 우산이 있어요?`,
           instructions: this.listening14Instructions,
           points: 4,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1hcLXjzV6O8M5z-lrBpCpJNWtpDM9vvAa',
@@ -47,6 +48,7 @@ export class TestService {
         {
           id: 2,
           text: null,
+          script: '남자: 오늘 회사에 가요?',
           instructions: this.listening14Instructions,
           points: 4,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1g8XmZzK4JPFmQEBHmkapvOTazUcjqWG7',
@@ -76,6 +78,7 @@ export class TestService {
         {
           id: 3,
           text: null,
+          script: '여자: 누구하고 커피를 마셨어요?',
           instructions: this.listening14Instructions,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1hiGdDF3y1dVHp1Xvyi7FrXCNFPM-lgyY',
@@ -105,6 +108,7 @@ export class TestService {
         {
           id: 4,
           text: null,
+          script: '여자: 이 파란색 바지 어때요?',
           instructions: this.listening14Instructions,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1NzJj2s7kZ2qaomzi1a3LlT3e9KqWGTfc',
@@ -134,6 +138,7 @@ export class TestService {
         {
           id: 5,
           text: null,
+          script: '여자: 민수 씨, 저 먼저 갈게요.',
           instructions: this.listening56Instructions,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=11cWMOdLR-9BPEHJ4trs-Riq1kvZQy63B',
@@ -163,6 +168,7 @@ export class TestService {
         {
           id: 6,
           text: null,
+          script: '남자: 실례합니다. 김 영수 씨 있어요? 잠깐 만나러 왔는데요.',
           instructions: this.listening56Instructions,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=145QDt1K1YB15_qls2rdd9UOdc16PHXm3',
@@ -192,6 +198,8 @@ export class TestService {
         {
           id: 7,
           text: null,
+          script: `남자: 뭘 드릴까요?
+여자: 아침부터 머리가 아파요. 약 좀 주세요.`,
           instructions: this.listening710Instructions,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1OTMouOVip29jZQhZtPLi1ROftso9H_Fb',
@@ -221,6 +229,8 @@ export class TestService {
         {
           id: 8,
           text: null,
+          script: `여자: 오늘 수업은 여기까지입니다.
+남자: 저, 질문이 있습니다.`,
           instructions: this.listening710Instructions,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1Iv9JxHTjUxqSNY2FBPgDzCAM--5XnqnB',
@@ -250,6 +260,8 @@ export class TestService {
         {
           id: 9,
           text: null,
+          script: `남자: 실례합니다. 책은 몇 권까지 빌릴 수 있어요?
+여자: 더섯 권요.`,
           instructions: this.listening710Instructions,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1MV_CbBfNm9Gc3kdYLVCeCeXez2rzoCcU',
@@ -279,6 +291,8 @@ export class TestService {
         {
           id: 10,
           text: null,
+          script: `여자: 우리 여기서 배드민턴 칠까요?
+남자: 여기는 축구를 하는 학생들이 있으니까 저쪽으로 가요.`,
           instructions: this.listening710Instructions,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1NHL-Yi2bUi3ykwGaFWIrLoKnpxRobgce',
@@ -308,6 +322,8 @@ export class TestService {
         {
           id: 11,
           text: null,
+          script: `남자: 이거 비싸요?
+여자: 아니요, 안 비싸요. 한 개에 천 원이에요.`,
           instructions: this.listening1114Instructions,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1nzMNCPngByMCIQaK17sb-l225qo3qMQd',
@@ -337,6 +353,8 @@ export class TestService {
         {
           id: 12,
           text: null,
+          script: `남자: 오늘 회의는 몇 시예요?
+여자: 어제하고 같아요. 세 시예요.`,
           instructions: this.listening1114Instructions,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1kRPd720Hw47Lsphm9amuVpbdiO5WzAUm',
@@ -366,6 +384,8 @@ export class TestService {
         {
           id: 13,
           text: null,
+          script: `여자: 저는 요리하기를 좋아해요. 민수 씨는요?
+남자: 저는 시간이 있을 때마다 산에 가요.`,
           instructions: this.listening1114Instructions,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1akRdHHSrbcoIx5_9PDe1msUHPB71cJv1',
@@ -395,6 +415,8 @@ export class TestService {
         {
           id: 14,
           text: null,
+          script: `남자: 내일이 쉬는 날이에요?
+여자: 네 내일은 한글날이라서 쉬어요.`,
           instructions: this.listening1114Instructions,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1pjTHUqI8T6YhxssMC-q3suRYWJM1mmM_',
@@ -424,6 +446,8 @@ export class TestService {
         {
           id: 15,
           text: null,
+          script: `남자: 졸업 축하해요. 이 꽃 받으세요.
+여자: 고마워요.`,
           instructions: this.listening1516Instructions,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1cVwiTxBI6YZOStkZoOawWslowE3oRv2B',
@@ -457,6 +481,8 @@ export class TestService {
         {
           id: 16,
           text: null,
+          script: `남자: (약간 멀리서 말하는 느낌) 유미 씨, 빨리 오세요.
+여자: 잠깐만요. 오랜만에 자전거를 타니까 잘 못 타겠어요.`,
           instructions: this.listening1516Instructions,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1UFaLhlwNns8iU91Hus7IR1I79a1JNsy6',
@@ -490,6 +516,8 @@ export class TestService {
         {
           id: 17,
           text: null,
+          script: `여자: 돈을 찾으려고 하는데 근처에 은행이 있어요?
+남자: 네. 이쪽으로 쭉 가면 있어요.`,
           instructions: this.listening1721Instructions,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=18OCWFXOpIShxl8nulYVs0LlOA7sVVdSd',
@@ -519,6 +547,9 @@ export class TestService {
         {
           id: 18,
           text: null,
+          script: `남자: 손님, 미술관으로 사진기를 가지고 들어오시면 됩니다.
+여자: 어, 불랐어요. 죄송해요. 그럼 이 사진기는 어떻게 할까요?
+남자: 입구에 사진기 맡기는 곳이 있습니다.`,
           instructions: this.listening1721Instructions,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=16AAD4iA8tZK8rJgwVx-hCl-uKpfCUFlL',
@@ -548,6 +579,10 @@ export class TestService {
         {
           id: 19,
           text: null,
+          script: `남자: 유미 씨는 요즘 주말에도 바쁜 것 같아요.
+여자: 네, 좀 바빠요. 토요일마다 빵 만드는 걸 배우고 있어서요.
+남자: 빵을 직접 만들어요? 재미있겠네요.
+여자: 정말 재미있어요. 만드는 방법도 생각보다 어렵지 않고요.`,
           instructions: this.listening1721Instructions,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1hS4j7VPEY0xTO7Mp4JCM778r-NwmvQqF',
@@ -577,6 +612,10 @@ export class TestService {
         {
           id: 20,
           text: null,
+          script: `여자: (전화벨) 여보세요. 민우 씨, 밤늦게 죄송한데요. 회의 자료 좀 이메일로 보내 줄 수 있어요?
+남자: 아, 제가 지금 밖에 있는데요. 집에 가서 바로 보내 드릴게요.
+여자: 바쁘시면 다른 분께 부탁해 볼게요.
+남자: 아니에요. 지금 집에 가교 있어요.`,
           instructions: this.listening1721Instructions,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1omME-C4WLVKV4MLifGBajyCMe-9eLGQI',
@@ -606,6 +645,8 @@ export class TestService {
         {
           id: 21,
           text: null,
+          script: `여자: 여귄을 만들어야 하는데요. 회사 일이 늦게 끝나서 갈 시간이 없어요.
+`,
           instructions: this.listening1721Instructions,
           points: 3,
           audioUrl: 'https://drive.google.com/uc?export=download&id=1QsN-Q4oYxW0poNFXqjqojkfeMoqeYnjA',

@@ -7,10 +7,12 @@ export interface Question {
   id: number;
   text: string;
   instructions: string;
+  script?: string;
   audioUrl?: string;
   points: number;
   answers: Answer[];
   selectedAnswer?: Answer;
+  scriptIsVisible?: boolean;
 }
 
 export interface Answer {
