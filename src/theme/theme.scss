@@ -3,3 +3,28 @@
  * Framework overrides and customization goes here.
  */
 
+@import "src/theme/theme-variables";
+
+.main-container {
+  margin-top: $spacer;
+}
+
+.masthead {
+  position: relative;
+  background-color: #f8f9fa;
+  background: url(https://blackrockdigital.github.io/startbootstrap-clean-blog/img/home-bg.jpg) no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+}
