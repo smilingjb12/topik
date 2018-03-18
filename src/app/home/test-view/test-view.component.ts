@@ -9,7 +9,7 @@ import { Test, Question, Answer } from '../test.model';
   styleUrls: ['./test-view.component.scss']
 })
 export class TestViewComponent implements OnInit {
-  test: Test;
+  questions: Question[];
   selectedQuestion: Question;
 
   constructor(private testService: TestService,
@@ -19,8 +19,9 @@ export class TestViewComponent implements OnInit {
     window.scrollTo(0, 0);
     this.route.params.subscribe((params: any) => {
       let testId = +params['id'];
-      this.test = this.testService.getTest(testId);
-      this.selectedQuestion = this.test.questions[0];
+      let questionsType = params['type'];
+      this.questions = this.testService.getTestQuestions(testId, questionsType);
+      this.selectedQuestion = this.questions[0];
     });
   }
 
@@ -32,6 +33,14 @@ export class TestViewComponent implements OnInit {
     this.selectedQuestion = question;
   }
 
+  isFirstQuestion(question: Question): boolean {
+    return this.questions[0] == question;
+  }
+
+  isLastQuestion(question: Question): boolean {
+    return this.questions[this.questions.length - 1] == question;
+  }
+
   getQuestionNgClass(question: Question) {
     return {
       'success': question.selectedAnswer && question.selectedAnswer.isCorrect,
@@ -40,21 +49,17 @@ export class TestViewComponent implements OnInit {
   }
 
   goToPreviousQuestion() {
-    let selectedQuestionIndex = this.selectedQuestion.id - 1;
-    this.selectedQuestion = this.test.questions[selectedQuestionIndex - 1];
+    let selectedQuestionIndex = this.questions.indexOf(this.selectedQuestion);
+    this.selectedQuestion = this.questions[selectedQuestionIndex - 1];
   }
 
   goToNextQuestion() {
-    let selectedQuestionIndex = this.selectedQuestion.id - 1;
-    this.selectedQuestion = this.test.questions[selectedQuestionIndex + 1];
+    let selectedQuestionIndex = this.questions.indexOf(this.selectedQuestion);
+    this.selectedQuestion = this.questions[selectedQuestionIndex + 1];
   }
-
-
 
   answerIsSelected(answer: Answer) {
     return this.selectedQuestion && this.selectedQuestion.selectedAnswer &&
       this.selectedQuestion.selectedAnswer.id == answer.id;
   }
-
-
 }

@@ -8,7 +8,7 @@ import { TestViewComponent } from "@app/home/test-view/test-view.component";
 const routes: Routes = [
   Route.withShell([
     { path: '', component: HomeComponent },
-    { path: 'tests/:id', component: TestViewComponent }
+    { path: 'tests/:id/:type', component: TestViewComponent }
   ])
 ];
 

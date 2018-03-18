@@ -3,7 +3,7 @@
       <div class="col-lg-12">
           <nav>
               <ul class="pagination pagination-sm flex-wrap justify-content-center">
-                  <li class="page-item" *ngFor="let question of test.questions"
+                  <li class="page-item" *ngFor="let question of questions"
                       [ngClass]="{'active': isActive(question)}">
                       <a class="page-link" href="javascript:void(0)" (click)="selectQuestion(question)"
                           [ngClass]="getQuestionNgClass(question)">{{question.id}}</a>
@@ -16,10 +16,10 @@
   <div class="row actions-row">
     <div class="col-lg-12">
         <div class="row next-prev">
-            <button *ngIf="selectedQuestion.id != 1"
+            <button *ngIf="!isFirstQuestion(selectedQuestion)"
                     type="button" class="btn btn-light btn-lg col-lg-2 col-12 col-sm-3 order-2 order-sm-1"
                     (click)="goToPreviousQuestion()">Previous</button>
-            <button *ngIf="selectedQuestion.id != test.questions.length"
+            <button *ngIf="!isLastQuestion(selectedQuestion)"
                     type="button" class="btn btn-light btn-lg col-lg-2 col-12 col-sm-3 order-1 order-sm-2 btn-next"
                     (click)="goToNextQuestion()">Next</button>
         </div>

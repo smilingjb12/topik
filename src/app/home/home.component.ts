@@ -20,6 +20,14 @@ export class HomeComponent implements OnInit {
     this.router.navigate(['/tests', test.id]);
   }
 
+  hasListeningQuestions(test: Test): boolean {
+    return this.testService.hasListeningQuestions(test);
+  }
+
+  hasReadingQuestions(test: Test): boolean {
+    return this.testService.hasReadingQuestions(test);
+  }
+
   goToTopik2(test: Test) {
     this.router.navigate(['/tests', test.id]);
   }

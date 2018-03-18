@@ -20,11 +20,11 @@
         <div class="card-body">
           <div class="card-title text-center">{{test.id}} TOPIK I</div>
           <button type="button" class="btn btn-block btn-lg btn-primary"
-             [disabled]="test.questions.length < 30"
-             routerLink="/tests/{{test.id}}">Listening</button>
+             [disabled]="!hasListeningQuestions(test)"
+             routerLink="/tests/{{test.id}}/listening">Listening</button>
           <button type="button" class="btn btn-block btn-lg btn-primary"
-             [disabled]="test.questions.length < 70"
-             routerLink="/tests/{{test.id}}">Reading</button>
+             [disabled]="!hasReadingQuestions(test)"
+             routerLink="/tests/{{test.id}}/reading">Reading</button>
         </div>
       </div>
     </div>

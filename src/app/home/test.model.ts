@@ -6,6 +6,7 @@ export interface Test {
 export interface Question {
   id: number;
   text: string;
+  imageUrl?: string;
   instructions: string;
   script?: string;
   audioUrl?: string;
