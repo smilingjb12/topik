@@ -16,6 +16,7 @@ export class TestViewComponent implements OnInit {
     private route: ActivatedRoute) { }
 
   ngOnInit() {
+    window.scrollTo(0, 0);
     this.route.params.subscribe((params: any) => {
       let testId = +params['id'];
       this.test = this.testService.getTest(testId);
