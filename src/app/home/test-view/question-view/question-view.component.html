@@ -39,7 +39,8 @@
                             [ngClass]="getAnswerNgClass(answer)">
                         <span class="text" [innerHTML]="generateQuestionNumberTitle(answer)"></span>
                     </button>
-                    <div *ngIf="answer.text" class="text answer-text" (click)="selectAnswer(answer)">{{answer.text}}</div>
+                    <div *ngIf="answer.text" class="text answer-text" (click)="selectAnswer(answer)"
+                         [ngClass]="getAnswerTextNgClass(answer)">{{answer.text}}</div>
                     <div class="col-lg-6 col-sm-8 col-xs-12" *ngIf="answer.imageUrl">
                         <img class="img-fluid answer-image" [src]="answer.imageUrl" (click)="selectAnswer(answer)"/>
                     </div>

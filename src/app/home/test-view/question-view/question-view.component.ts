@@ -32,6 +32,14 @@ export class QuestionViewComponent implements OnInit, OnChanges {
     }
   }
 
+  getAnswerTextNgClass(answer: Answer) {
+    return {
+      'correct': answer.isTouched && answer.isCorrect,
+      'wrong': answer.isTouched && !answer.isCorrect,
+      '': !answer.isTouched
+    };
+  }
+
   getAnswerNgClass(answer: Answer) {
     return {
       'btn-success': answer.isTouched && answer.isCorrect,
