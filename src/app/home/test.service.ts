@@ -5,6 +5,7 @@ import topikOne35ReadingQuestions from './tests/35-topik-1-reading';
 
 @Injectable()
 export class TestService {
+  private STATE_VERSION_KEY = 'state-1';
 
   tests: Test[] = [
     {
@@ -20,6 +21,22 @@ export class TestService {
       questions: []
     }
   ];
+
+  constructor() {
+    let savedState = window.localStorage[this.STATE_VERSION_KEY];
+    if (savedState) {
+      let savedStateObject = JSON.parse(savedState);
+      this.tests = Object.assign(this.tests, savedStateObject);
+    }
+  }
+
+  getStartupQuestion(questions: Question[]): Question {
+    return questions.find(it => it.selectedAnswer == null);
+  }
+
+  saveState() {
+    window.localStorage[this.STATE_VERSION_KEY] = JSON.stringify(this.tests);
+  }
 
   hasListeningQuestions(test: Test): boolean {
     return test && test.questions.length >= 30;
@@ -46,7 +63,5 @@ export class TestService {
   getTests(): Test[] {
     return this.tests;
   }
-
-  constructor() { }
 
 }

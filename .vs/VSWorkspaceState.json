@@ -4,11 +4,10 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\core",
-    "\\src\\app\\core\\shell\\header",
     "\\src\\app\\home",
     "\\src\\app\\home\\test-view",
     "\\src\\theme"
   ],
-  "SelectedNode": "\\src\\main.scss",
+  "SelectedNode": "\\src\\app\\home\\home.component.ts",
   "PreviewInSolutionExplorer": false
 }

@@ -11,6 +11,7 @@ import { Test, Question, Answer } from '../test.model';
 export class TestViewComponent implements OnInit {
   questions: Question[];
   selectedQuestion: Question;
+  testId: number;
 
   constructor(private testService: TestService,
     private route: ActivatedRoute) { }
@@ -18,18 +19,18 @@ export class TestViewComponent implements OnInit {
   ngOnInit() {
     window.scrollTo(0, 0);
     this.route.params.subscribe((params: any) => {
-      let testId = +params['id'];
+      this.testId = +params['id'];
       let questionsType = params['type'];
-      this.questions = this.testService.getTestQuestions(testId, questionsType);
-      this.selectedQuestion = this.questions[0];
+      this.questions = this.testService.getTestQuestions(this.testId, questionsType);
+      this.selectedQuestion = this.testService.getStartupQuestion(this.questions);
     });
   }
 
-  isActive(question: Question) {
+  isActive(question: Question): boolean {
     return question.id == this.selectedQuestion.id;
   }
 
-  selectQuestion(question: Question) {
+  selectQuestion(question: Question): void {
     this.selectedQuestion = question;
   }
 
@@ -48,17 +49,17 @@ export class TestViewComponent implements OnInit {
     }
   }
 
-  goToPreviousQuestion() {
+  goToPreviousQuestion(): void {
     let selectedQuestionIndex = this.questions.indexOf(this.selectedQuestion);
     this.selectedQuestion = this.questions[selectedQuestionIndex - 1];
   }
 
-  goToNextQuestion() {
+  goToNextQuestion(): void {
     let selectedQuestionIndex = this.questions.indexOf(this.selectedQuestion);
     this.selectedQuestion = this.questions[selectedQuestionIndex + 1];
   }
 
-  answerIsSelected(answer: Answer) {
+  answerIsSelected(answer: Answer): boolean {
     return this.selectedQuestion && this.selectedQuestion.selectedAnswer &&
       this.selectedQuestion.selectedAnswer.id == answer.id;
   }

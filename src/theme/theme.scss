@@ -5,8 +5,16 @@
 
 @import "src/theme/theme-variables";
 
+body {
+  background-color: #f8f9fa;
+}
+
 .main-container {
   margin-top: $spacer;
+
+  &.light-bg {
+    background-color: #fff;
+  }
 }
 
 .masthead {

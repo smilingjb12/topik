@@ -1,6 +1,7 @@
 export interface Test {
   id: number;
   questions: Question[];
+  activeQuestion?: Question;
 }
 
 export interface Question {

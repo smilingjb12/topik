@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, OnChanges, SimpleChanges, ViewChild } from '@angular/core';
 import { Question, Answer } from '../../test.model';
+import { TestService } from "@app/home/test.service";
 
 @Component({
   selector: 'app-question-view',
@@ -11,7 +12,8 @@ export class QuestionViewComponent implements OnInit, OnChanges {
   @ViewChild('audio') audioElement: any;
   scriptIsVisible: boolean = false;
 
-  constructor() { }
+  constructor(
+    private testService: TestService) { }
 
   ngOnInit() {
   }
@@ -43,6 +45,7 @@ export class QuestionViewComponent implements OnInit, OnChanges {
     if (this.question.selectedAnswer == null) {
       this.question.selectedAnswer = answer;
     }
+    this.testService.saveState();
   }
 
   generateQuestionNumberTitle(answer: Answer) {
