@@ -26,7 +26,7 @@ export class TestService {
     let savedState = window.localStorage[this.STATE_VERSION_KEY];
     if (savedState) {
       let savedStateObject = JSON.parse(savedState);
-      this.tests = Object.assign(this.tests, savedStateObject);
+      this.tests = Object.assign(savedStateObject, this.tests);
     }
   }
 

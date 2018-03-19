@@ -3,6 +3,7 @@ const reading3439Instructions = '(       )에 들어갈 가장 알맞은 것을 
 const reading4042Instructions = '다음을 읽고 맞지 않는 것을 고르십시오.'
 const reading4345Instructions = '다음의 내용과 같은 것을 고르십시오.';
 const reading4648Instructions = '다음을 읽고 중심 생각을 고르십시오.';
+const reading4950Instructions = '다음을 읽고 물음에 답하십시오.';
 
 export default [
   {
@@ -452,6 +453,120 @@ export default [
       {
         id: 4,
         text: '저는 집에서 영화 보는 것을 좋하합니다.',
+        isCorrect: true
+      }
+    ]
+  },
+  {
+    id: 47,
+    text: '시간이 없어서 일을 다 하지 못했습니다. 그래서 지현 씨가 저를 도와주었습니다. 저는 지현 씨에게 커피를 사 주었습니다.',
+    instructions: reading4648Instructions,
+    points: 4,
+    answers: [
+      {
+        id: 1,
+        text: '저는 일을 많이 합니다.',
+        isCorrect: false
+      },
+      {
+        id: 2,
+        text: '저는 커피를 좋아합니다.',
+        isCorrect: false
+      },
+      {
+        id: 3,
+        text: '저는 지현 씨가 고마웠습니다.',
+        isCorrect: true
+      },
+      {
+        id: 4,
+        text: '저는 지현 씨를 도와주었습니다.',
+        isCorrect: false
+      }
+    ]
+  },
+  {
+    id: 48,
+    text: '이번 주말에 제가 좋아하는 가수의 공연이 있습니다. 저는 두 달 전에 표를 미리 샀습니다. 공연을 빨리 보고 싶습니다.',
+    instructions: reading4648Instructions,
+    points: 4,
+    answers: [
+      {
+        id: 1,
+        text: '저는 표를 사고 싶습니다.',
+        isCorrect: false
+      },
+      {
+        id: 2,
+        text: '저는 가수가 되고 싶습니다.',
+        isCorrect: false
+      },
+      {
+        id: 3,
+        text: '저는 공연을 기다리고 있습니다.',
+        isCorrect: true
+      },
+      {
+        id: 4,
+        text: '저는 두 달 전에 공연을 봤습니다.',
+        isCorrect: false
+      }
+    ]
+  },
+  {
+    id: 49,
+    text: '제 친구는 그림 그리는 것을 좋아합니다. 그래서 시간이 있을 때마다 종이컵에 그림을 그립니다. 그리고 친한 사람들에게 종이컵을 선물합니다. (   ㄱ   ) 종이컵은 세상에 하나만 있습니다. 친구의 종이컵은 참 예쁩니다.',
+    instructions: reading4950Instructions,
+    description: '(   ㄱ   )에 들어갈 알맞을 말을 고르십시오.',
+    points: 4,
+    answers: [
+      {
+        id: 1,
+        text: '친구가 산',
+        isCorrect: false
+      },
+      {
+        id: 2,
+        text: '친구가 만든',
+        isCorrect: true
+      },
+      {
+        id: 3,
+        text: '사람들이 선물한',
+        isCorrect: false
+      },
+      {
+        id: 4,
+        text: '사람들이 버리는',
+        isCorrect: false
+      }
+    ]
+  },
+  {
+    id: 50,
+    text: '제 친구는 그림 그리는 것을 좋아합니다. 그래서 시간이 있을 때마다 종이컵에 그림을 그립니다. 그리고 친한 사람들에게 종이컵을 선물합니다. (   ㄱ   ) 종이컵은 세상에 하나만 있습니다. 친구의 종이컵은 참 예쁩니다.',
+    instructions: reading4950Instructions,
+    description: '이 글의 내용과 같은 것을 고르십시오.',
+    points: 4,
+    answers: [
+      {
+        id: 1,
+        text: '친구는 종이로 컵을 만듭니다.',
+        isCorrect: false
+      },
+      {
+        id: 2,
+        text: '친구는 예쁜 종이컵을 받았습니다.',
+        isCorrect: false
+      },
+      {
+        id: 3,
+        text: '친구는 친한 사람들과 그림음 그립니다.',
+        isCorrect: false
+      },
+      {
+        id: 4,
+        text: '친구는 종이컵에 예쁘게 그림을 그립니다.',
         isCorrect: true
       }
     ]

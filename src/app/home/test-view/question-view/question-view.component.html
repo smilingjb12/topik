@@ -11,12 +11,17 @@
     </div>
 </div>
 <div class="row" *ngIf="question.text">
-    <div class="col-lg-12">
-        <p class="text">{{question.text}}</p>
+    <div class="col-lg-8 col-sm-12">
+        <p class="text question-text">{{question.text}}</p>
     </div>
 </div>
+<div class="row" *ngIf="question.description">
+  <div class="col-lg-12">
+    <p class="text">{{question.description}}</p>
+  </div>
+</div>
 <div class="row" *ngIf="question.imageUrl">
-  <div class="col-sm-12 col-lg-6">
+  <div class="col-sm-12 col-lg-8">
     <img class="img-fluid answer-image" [src]="question.imageUrl" />
   </div>
 </div>

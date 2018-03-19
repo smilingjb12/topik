@@ -38,9 +38,13 @@
   }
 }
 
+.question-text {
+  border: 1px solid #666;
+}
+
 .script {
   white-space: pre-wrap;
-  border: 1px solid #333;
+  border: 1px solid #ccc;
 }
 
 audio {

@@ -9,6 +9,7 @@ export interface Question {
   text: string;
   imageUrl?: string;
   instructions: string;
+  description?: string;
   script?: string;
   audioUrl?: string;
   points: number;
