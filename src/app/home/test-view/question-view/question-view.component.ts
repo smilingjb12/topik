@@ -20,6 +20,7 @@ export class QuestionViewComponent implements OnInit, OnChanges {
 
   toggleScript(question: Question) {
     question.scriptIsVisible = !question.scriptIsVisible;
+    this.testService.saveState();
   }
 
   ngOnChanges(changes: SimpleChanges): void {
