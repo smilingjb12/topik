@@ -5,7 +5,7 @@ import topikOne35ReadingQuestions from './tests/35-topik-1-reading';
 
 @Injectable()
 export class TestService {
-  private STATE_VERSION_KEY = 'state-1';
+  private STATE_VERSION_KEY = 'state-2';
 
   tests: Test[] = [
     {
@@ -26,7 +26,7 @@ export class TestService {
     let savedState = window.localStorage[this.STATE_VERSION_KEY];
     if (savedState) {
       let savedStateObject = JSON.parse(savedState);
-      this.tests = Object.assign(savedStateObject, this.tests);
+      this.tests = Object.assign(this.tests, savedStateObject);
     }
   }
 

@@ -3,11 +3,13 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\core",
+    "\\src\\app\\about",
     "\\src\\app\\home",
     "\\src\\app\\home\\test-view",
+    "\\src\\app\\home\\test-view\\question-view",
+    "\\src\\app\\home\\tests",
     "\\src\\theme"
   ],
-  "SelectedNode": "\\src\\app\\home\\home.component.ts",
+  "SelectedNode": "\\src\\app\\home\\test.service.ts",
   "PreviewInSolutionExplorer": false
 }
