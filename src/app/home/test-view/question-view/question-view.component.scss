@@ -6,11 +6,13 @@
 .answer {
   display: flex;
   align-items: center;
+  cursor: pointer;
 
   .answer-text {
     margin-left: 10px;
     cursor: pointer;
     transition: background-color 0.5s;
+
     &.correct {
       background-color: rgba(40, 167, 69, 0.12941176470588237);
     }
