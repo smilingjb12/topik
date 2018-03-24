@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
   constructor(private router: Router,
               private authenticationService: AuthenticationService,
               private i18nService: I18nService,
-              private darkModeService: DarkModeService) { }
+              public darkModeService: DarkModeService) { }
 
   ngOnInit() { }
 
