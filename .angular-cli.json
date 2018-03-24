@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "ng-x-rocket"
+    "name": "Practice TOPIK"
   },
   "apps": [
     {
@@ -11,7 +11,8 @@
         "assets",
         "favicon.ico",
         "manifest.json",
-        "robots.txt"
+        "robots.txt",
+        "redirects.txt"
       ],
       "index": "index.html",
       "main": "main.ts",

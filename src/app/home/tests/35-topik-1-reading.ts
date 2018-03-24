@@ -3,7 +3,9 @@ const reading3439Instructions = '(       )에 들어갈 가장 알맞은 것을 
 const reading4042Instructions = '다음을 읽고 맞지 않는 것을 고르십시오.'
 const reading4345Instructions = '다음의 내용과 같은 것을 고르십시오.';
 const reading4648Instructions = '다음을 읽고 중심 생각을 고르십시오.';
-const reading4950Instructions = '다음을 읽고 물음에 답하십시오.';
+const reading4956Instructions = '다음을 읽고 물음에 답하십시오.';
+const reading5758Instructions = '다음을 순서대로 맞게 나열한 것을 고르십시오.';
+const reading5970Instructions = '다음을 읽고 물음에 답하십시오.';
 
 export default [
   {
@@ -516,7 +518,7 @@ export default [
   {
     id: 49,
     text: '제 친구는 그림 그리는 것을 좋아합니다. 그래서 시간이 있을 때마다 종이컵에 그림을 그립니다. 그리고 친한 사람들에게 종이컵을 선물합니다. (   ㄱ   ) 종이컵은 세상에 하나만 있습니다. 친구의 종이컵은 참 예쁩니다.',
-    instructions: reading4950Instructions,
+    instructions: reading4956Instructions,
     description: '(   ㄱ   )에 들어갈 알맞을 말을 고르십시오.',
     points: 4,
     answers: [
@@ -545,7 +547,7 @@ export default [
   {
     id: 50,
     text: '제 친구는 그림 그리는 것을 좋아합니다. 그래서 시간이 있을 때마다 종이컵에 그림을 그립니다. 그리고 친한 사람들에게 종이컵을 선물합니다. (   ㄱ   ) 종이컵은 세상에 하나만 있습니다. 친구의 종이컵은 참 예쁩니다.',
-    instructions: reading4950Instructions,
+    instructions: reading4956Instructions,
     description: '이 글의 내용과 같은 것을 고르십시오.',
     points: 4,
     answers: [
@@ -568,6 +570,590 @@ export default [
         id: 4,
         text: '친구는 종이컵에 예쁘게 그림을 그립니다.',
         isCorrect: true
+      }
+    ]
+  },
+  {
+    id: 51,
+    text: '몇 십 년 후에는 자동차가 하늘로 다닐 것입니다. 그러면 그 자동차를 만드는 사람이 필요합니다. 그리고 하늘에 자동차가 있으면 하늘에서 일하는 교통경찰도 있어야 합니다. 지금은 이런 사람들을 ( ㄱ ) 없습니다. 하지만 앞으로는 이런 사람들을 자주 불 수 있을 것입니다.',
+    instructions: reading4956Instructions,
+    description: '( ㄱ )에 들어갈 알맞은 말을 고르십시오.',
+    points: 4,
+    answers: [
+      {
+        id: 1,
+        text: '만날 수',
+        isCorrect: true
+      },
+      {
+        id: 2,
+        text: '보낼 수',
+        isCorrect: false
+      },
+      {
+        id: 3,
+        text: '가르칠 수',
+        isCorrect: false
+      },
+      {
+        id: 4,
+        text: '기다릴 수',
+        isCorrect: false
+      }
+    ]
+  },
+  {
+    id: 52,
+    text: '몇 십 년 후에는 자동차가 하늘로 다닐 것입니다. 그러면 그 자동차를 만드는 사람이 필요합니다. 그리고 하늘에 자동차가 있으면 하늘에서 일하는 교통경찰도 있어야 합니다. 지금은 이런 사람들을 ( ㄱ ) 없습니다. 하지만 앞으로는 이런 사람들을 자주 불 수 있을 것입니다.',
+    instructions: reading4956Instructions,
+    description: '무엇에 대한 이야기인지 고르십시오.',
+    points: 4,
+    answers: [
+      {
+        id: 1,
+        text: '미래의 집',
+        isCorrect: false
+      },
+      {
+        id: 2,
+        text: '미래의 직업',
+        isCorrect: true
+      },
+      {
+        id: 3,
+        text: '내가 만든 자동차',
+        isCorrect: false
+      },
+      {
+        id: 4,
+        text: '내가 좋아하는 자동차',
+        isCorrect: false
+      }
+    ]
+  },
+  {
+    id: 53,
+    text: '저는 아침에 일어나서 혼자 운동을 합니다. 운동을 하면 즐겁습니다. 그런데 아침에 ( ㄱ ) 일어나는 것이 힘들어서 가끔 운동을 못 합니다. 그래서 다음 주부터는 저녁에 친구와 같이 운동들 하기로 했습니다. 이제 매일 운동을 할 것 같습니다.',
+    instructions: reading4956Instructions,
+    description: '( ㄱ )에 들어갈 알맞은 말을 고르십시오.',
+    points: 4,
+    answers: [
+      {
+        id: 1,
+        text: '많이',
+        isCorrect: false
+      },
+      {
+        id: 2,
+        text: '잠깐',
+        isCorrect: false
+      },
+      {
+        id: 3,
+        text: '늦게',
+        isCorrect: false
+      },
+      {
+        id: 4,
+        text: '일찍',
+        isCorrect: true
+      }
+    ]
+  },
+  {
+    id: 54,
+    text: '저는 아침에 일어나서 혼자 운동을 합니다. 운동을 하면 즐겁습니다. 그런데 아침에 ( ㄱ ) 일어나는 것이 힘들어서 가끔 운동을 못 합니다. 그래서 다음 주부터는 저녁에 친구와 같이 운동들 하기로 했습니다. 이제 매일 운동을 할 것 같습니다.',
+    instructions: reading4956Instructions,
+    description: '이 글의 내용과 같은 것을 고르십시오.',
+    points: 4,
+    answers: [
+      {
+        id: 1,
+        text: '이 사람은 저녁에 운동을 했습니다.',
+        isCorrect: false
+      },
+      {
+        id: 2,
+        text: '이 사람은 아침마다 친구를 만납니다.',
+        isCorrect: false
+      },
+      {
+        id: 3,
+        text: '이 사람은 친구와 운동을 할 것입니다.',
+        isCorrect: true
+      },
+      {
+        id: 4,
+        text: '이 사람은 친구와 약속을 하려고 합니다.',
+        isCorrect: false
+      }
+    ]
+  },
+  {
+    id: 55,
+    text: '저는 안경이 여러 개 있습니다. 그래서 그때그때 다른 안경을 씁니다. 사람을 처음 만날 때는 부드러운 느낌의 안경을 씁니다. 운동을 할 때는 가벼운 안경을 씁니다. (ㄱ ) 멋있게 보이고 싶을 때는 유행하는 안경을 씁니다. 이렇게 안경을 바꿔서 쓰면 기분이 좋아집니다.',
+    instructions: reading4956Instructions,
+    description: '( ㄱ )에 들어갈 알맞을 말을 고르십시오.',
+    points: 4,
+    answers: [
+      {
+        id: 1,
+        text: '그러면',
+        isCorrect: false
+      },
+      {
+        id: 2,
+        text: '그래서',
+        isCorrect: false
+      },
+      {
+        id: 3,
+        text: '그리고',
+        isCorrect: true
+      },
+      {
+        id: 4,
+        text: '그러니까',
+        isCorrect: false
+      }
+    ]
+  },
+  {
+    id: 56,
+    text: '저는 안경이 여러 개 있습니다. 그래서 그때그때 다른 안경을 씁니다. 사람을 처음 만날 때는 부드러운 느낌의 안경을 씁니다. 운동을 할 때는 가벼운 안경을 씁니다. (ㄱ ) 멋있게 보이고 싶을 때는 유행하는 안경을 씁니다. 이렇게 안경을 바꿔서 쓰면 기분이 좋아집니다.',
+    instructions: reading4956Instructions,
+    description: '이 글의 내용과 같은 것을 고르십시오.',
+    points: 4,
+    answers: [
+      {
+        id: 1,
+        text: '저는 안경이 한 개 있습니다.',
+        isCorrect: false
+      },
+      {
+        id: 2,
+        text: '저는 유행하는 안경이 있습니다.',
+        isCorrect: true
+      },
+      {
+        id: 3,
+        text: '저는 운동을 할 때 안경을 안 씁니다.',
+        isCorrect: false
+      },
+      {
+        id: 4,
+        text: '저는 사람을 만날 때 안경을 벗습니다.',
+        isCorrect: false
+      }
+    ]
+  },
+  {
+    id: 57,
+    text: `(가) 모든 동물은 잠을 잡니다.
+(나) 하지만 개나 고양이는 열 시간쯤 잡니다.
+(다) 말은 하루에 세 시간만 자도 괜찮습니다.
+(라) 그런데 잠을 자는 시간은 동물마다 다릅니다.`,
+    instructions: reading5758Instructions,
+    points: 4,
+    answers: [
+      {
+        id: 1,
+        text: '(가) – (나) – (다) – (라)',
+        isCorrect: false
+      },
+      {
+        id: 2,
+        text: '(가) – (다) – (나) – (라)',
+        isCorrect: false
+      },
+      {
+        id: 3,
+        text: '(가) – (라) – (나) – (다)',
+        isCorrect: false
+      },
+      {
+        id: 4,
+        text: '(가) – (라) – (다) – (나)',
+        isCorrect: true
+      }
+    ]
+  },
+  {
+    id: 58,
+    text: `(가) 우리 고향에는 딸기가 많이 납니다.
+(나) 그래서 딸기가 많은 4월에 축제를 합니다.
+(다) 그리고 맛있는 딸기를 시장보다 싸게 살 수 있습니다.
+(라) 이 축제에서는 딸기로 여러 가지 음식을 만들어 불 수 있습니다.`,
+    instructions: reading5758Instructions,
+    points: 4,
+    answers: [
+      {
+        id: 1,
+        text: '(가) – (나) – (다) – (라)',
+        isCorrect: false
+      },
+      {
+        id: 2,
+        text: '(가) – (나) – (리) – (다)',
+        isCorrect: true
+      },
+      {
+        id: 3,
+        text: '(가) – (다) – (나) – (라)',
+        isCorrect: false
+      },
+      {
+        id: 4,
+        text: '(가) – (라) – (나) – (다)',
+        isCorrect: false
+      }
+    ]
+  },
+  {
+    id: 59,
+    text: `라면은 맛있지만 소금이 많이 들어 있어서 건강에 나쁩니다. ( ㄱ ) 라면의 소금은 보통 국물을 만드는 스프에 있습니다. ( ㄴ ) 그래도 국물울 먹고 싶으면 스프를 조금만 넣습니다. ( ㄷ ) 그리고 라면을 끓일 때 스프를 늦게 넣는 것도 소금을 덜 먹는 또 하나의 방법입니다. ( ㄹ )`,
+    instructions: reading5970Instructions,
+    description: '다음 문장이 들어갈 곳을 고르십시오: "그래서 소금을 적게 먹으려면 라면 국물을 먹지 않는 게 좋습니다."',
+    points: 4,
+    answers: [
+      {
+        id: 1,
+        text: '( ㄱ )',
+        isCorrect: false
+      },
+      {
+        id: 2,
+        text: '( ㄴ )',
+        isCorrect: true
+      },
+      {
+        id: 3,
+        text: '( ㄷ )',
+        isCorrect: false
+      },
+      {
+        id: 4,
+        text: '( ㄹ )',
+        isCorrect: false
+      }
+    ]
+  },
+  {
+    id: 60,
+    text: `라면은 맛있지만 소금이 많이 들어 있어서 건강에 나쁩니다. ( ㄱ ) 라면의 소금은 보통 국물을 만드는 스프에 있습니다. ( ㄴ ) 그래도 국물울 먹고 싶으면 스프를 조금만 넣습니다. ( ㄷ ) 그리고 라면을 끓일 때 스프를 늦게 넣는 것도 소금을 덜 먹는 또 하나의 방법입니다. ( ㄹ )`,
+    instructions: reading5970Instructions,
+    description: '이 글의 내용과 같은 것을 고르십시오.',
+    points: 4,
+    answers: [
+      {
+        id: 1,
+        text: '라면은 건강에 좋은 음식입니다.',
+        isCorrect: false
+      },
+      {
+        id: 2,
+        text: '스프를 많이 넣으면 건강에 좋습니다.',
+        isCorrect: false
+      },
+      {
+        id: 3,
+        text: '스프를 먼저 넣으면 소금을 많이 먹게 됩니다.',
+        isCorrect: true
+      },
+      {
+        id: 4,
+        text: '라면의 소금을 적게 먹는 방법은 한 가지입니다.',
+        isCorrect: false
+      }
+    ]
+  },
+  {
+    id: 61,
+    text: `지금은 동전과 지폐를 모두 사용합니다. 하지만 전에는 동전만 사용했습니다. 종이로 만든 지폐는 쉽게 찢어지고 더러워져서 ( ㄱ ) 못합니다. 그리고 가짜 돈을 만들기도 쉽니다. 그래서 동전보다 지펴를 늦게 사용한 것입니다.`,
+    instructions: reading5970Instructions,
+    description: '( ㄱ )에 들어갈 알맞은 말을 고르십시오.',
+    points: 4,
+    answers: [
+      {
+        id: 1,
+        text: '오래 쓰지',
+        isCorrect: true
+      },
+      {
+        id: 2,
+        text: '가끔 내지',
+        isCorrect: false
+      },
+      {
+        id: 3,
+        text: '자주 만들지',
+        isCorrect: false
+      },
+      {
+        id: 4,
+        text: '계속 나오지',
+        isCorrect: false
+      }
+    ]
+  },
+  {
+    id: 62,
+    text: `지금은 동전과 지폐를 모두 사용합니다. 하지만 전에는 동전만 사용했습니다. 종이로 만든 지폐는 쉽게 찢어지고 더러워져서 ( ㄱ ) 못합니다. 그리고 가짜 돈을 만들기도 쉽니다. 그래서 동전보다 지펴를 늦게 사용한 것입니다.`,
+    instructions: reading5970Instructions,
+    description: '이 글의 내용과 같은 것을 고르십시오.',
+    points: 4,
+    answers: [
+      {
+        id: 1,
+        text: '지폐는 잘 더러워집니다.',
+        isCorrect: true
+      },
+      {
+        id: 2,
+        text: '옛날에도 지폐를 사용했습니다.',
+        isCorrect: false
+      },
+      {
+        id: 3,
+        text: '지폐가 동전보다 먼저 나왔습니다.',
+        isCorrect: false
+      },
+      {
+        id: 4,
+        text: '동전은 가짜 돈을 만들기 쉽습니다.',
+        isCorrect: false
+      }
+    ]
+  },
+  {
+    id: 63,
+    instructions: reading5970Instructions,
+    imageUrl: 'https://drive.google.com/uc?export=download&id=1qweR7gxXstSTpmHePDfuRvB5qlf3cXoD',
+    text: '유미 씨는 왜 이 글을 썼습니까?',
+    points: 4,
+    answers: [
+      {
+        id: 1,
+        text: '대회 날짜를 바꾸려고',
+        isCorrect: false
+      },
+      {
+        id: 2,
+        text: '대회 참가 신청을 받으려고',
+        isCorrect: false
+      },
+      {
+        id: 3,
+        text: '대회 참가 신청을 취소하려고',
+        isCorrect: false
+      },
+      {
+        id: 4,
+        text: '대회 시간과 장소를 알려 주려고',
+        isCorrect: true
+      }
+    ]
+  },
+  {
+    id: 64,
+    instructions: reading5970Instructions,
+    imageUrl: 'https://drive.google.com/uc?export=download&id=1qweR7gxXstSTpmHePDfuRvB5qlf3cXoD',
+    text: '이 글의 내용과 같은 것을 고르십시오.',
+    points: 4,
+    answers: [
+      {
+        id: 1,
+        text: '체육관은 운동장 옆에 있습니다.',
+        isCorrect: false
+      },
+      {
+        id: 2,
+        text: '비가 오면 농구 대회를 하지 않습니다.',
+        isCorrect: false
+      },
+      {
+        id: 3,
+        text: '농구 대회 참가자는 10시까지 와야 합니다.',
+        isCorrect: false
+      },
+      {
+        id: 4,
+        text: '날씨가 좋으면 운동장에서 농구 대회를 할 겁니다.',
+        isCorrect: true
+      }
+    ]
+  },
+  {
+    id: 65,
+    instructions: reading5970Instructions,
+    text: '식혜는 한국의 전통 음료수입니다. 보통 모임이나 잔치에서 ( ㄱ ) 식혜를 마십니다. 이것은 식혜가 소회를 도와주기 때문입니다. 식혜는 달고 맛있어서 많은 사람들이 좋아합니다. 시원하게 마시면 더 좋습니다. 저는 식혜를 만드는 방법이 간단해서 자주 만들어 먹습니다. 하지만 만드는 데 시간이 오래 걸립니다.',
+    description: '( ㄱ )에 들어갈 알맞은 말을 고르십시오.',
+    points: 4,
+    answers: [
+      {
+        id: 1,
+        text: '운동을 한 후에',
+        isCorrect: false
+      },
+      {
+        id: 2,
+        text: '음식을 먹은 후에',
+        isCorrect: true
+      },
+      {
+        id: 3,
+        text: '모임에 가기 전에',
+        isCorrect: false
+      },
+      {
+        id: 4,
+        text: '음료수를 마시기 전에',
+        isCorrect: false
+      }
+    ]
+  },
+  {
+    id: 66,
+    instructions: reading5970Instructions,
+    text: '식혜는 한국의 전통 음료수입니다. 보통 모임이나 잔치에서 ( ㄱ ) 식혜를 마십니다. 이것은 식혜가 소회를 도와주기 때문입니다. 식혜는 달고 맛있어서 많은 사람들이 좋아합니다. 시원하게 마시면 더 좋습니다. 저는 식혜를 만드는 방법이 간단해서 자주 만들어 먹습니다. 하지만 만드는 데 시간이 오래 걸립니다.',
+    description: '이 글의 내용과 같은 것을 고르십시오.',
+    points: 4,
+    answers: [
+      {
+        id: 1,
+        text: '실혜는 빨리 만들 수 있습니다.',
+        isCorrect: false
+      },
+      {
+        id: 2,
+        text: '식혜는 달아서 사람들이 싫어합니다.',
+        isCorrect: false
+      },
+      {
+        id: 3,
+        text: '모임이나 잔치에 가면 식혜를 만듭니다.',
+        isCorrect: true
+      },
+      {
+        id: 4,
+        text: '음료수를 마시기 전에',
+        isCorrect: false
+      }
+    ]
+  },
+  {
+    id: 67,
+    instructions: reading5970Instructions,
+    text: '문제를 풀기 어려울 때는 책상 앞에만 앉아 있지 마십시오. 계속 앉아 있으면 좋은 생각이 ( ㄱ ) 않습니다. 그럴 때는 일어나서 걷는 것이 좋습니다. 걸으려고 꼭 밖으로 ( ㄴ ). 집 안도 좋고 사무실 안도 괜찮습니다.',
+    description: '( ㄱ )에 들어갈 알맞은 말을 고르십시오.',
+    points: 4,
+    answers: [
+      {
+        id: 1,
+        text: '나지',
+        isCorrect: true
+      },
+      {
+        id: 2,
+        text: '많지',
+        isCorrect: false
+      },
+      {
+        id: 3,
+        text: '없어지지',
+        isCorrect: false
+      },
+      {
+        id: 4,
+        text: '달라지지',
+        isCorrect: false
+      }
+    ]
+  },
+  {
+    id: 68,
+    instructions: reading5970Instructions,
+    text: '문제를 풀기 어려울 때는 책상 앞에만 앉아 있지 마십시오. 계속 앉아 있으면 좋은 생각이 ( ㄱ ) 않습니다. 그럴 때는 일어나서 걷는 것이 좋습니다. 걸으려고 꼭 밖으로 ( ㄴ ). 집 안도 좋고 사무실 안도 괜찮습니다.',
+    description: '( ㄴ )에 들어갈 알맞은 말을 고르십시오.',
+    points: 4,
+    answers: [
+      {
+        id: 1,
+        text: '나가려고 합니다',
+        isCorrect: false
+      },
+      {
+        id: 2,
+        text: '나갈 수 있습니다',
+        isCorrect: false
+      },
+      {
+        id: 3,
+        text: '나가지 않아도 됩니다',
+        isCorrect: true
+      },
+      {
+        id: 4,
+        text: '나가지 않기로 합니다',
+        isCorrect: false
+      }
+    ]
+  },
+  {
+    id: 69,
+    instructions: reading5970Instructions,
+    text: '우리 가족은 ( ㄱ ) 적이 없습니다. 그래서 저는 그동안 할머니께서 노래를 좋아하는 것을 몰랐습니다. 그런데 어젯밤에 할머니께서 공연 초대장을 주셨습니다. 그 공연에서 할머니가 노래를 하실 것입니다. 우리 가족은 공연에 가려고 합니다. 거기에서 할머니의 노래를 처음 듣게 될 것입니다.',
+    description: '( ㄱ )에 들어갈 알맞은 말을 고르십시오.',
+    points: 4,
+    answers: [
+      {
+        id: 1,
+        text: '할머니와 공연을 한',
+        isCorrect: false
+      },
+      {
+        id: 2,
+        text: '할머니와 공연을 본',
+        isCorrect: false
+      },
+      {
+        id: 3,
+        text: '할머니와 노래를 배운',
+        isCorrect: false
+      },
+      {
+        id: 4,
+        text: '할머니의 노래를 들은',
+        isCorrect: true
+      }
+    ]
+  },
+  {
+    id: 70,
+    instructions: reading5970Instructions,
+    text: '우리 가족은 ( ㄱ ) 적이 없습니다. 그래서 저는 그동안 할머니께서 노래를 좋아하는 것을 몰랐습니다. 그런데 어젯밤에 할머니께서 공연 초대장을 주셨습니다. 그 공연에서 할머니가 노래를 하실 것입니다. 우리 가족은 공연에 가려고 합니다. 거기에서 할머니의 노래를 처음 듣게 될 것입니다.',
+    description: '이 글의 내용으로 알 수 있는 것은 무엇입니까?',
+    points: 4,
+    answers: [
+      {
+        id: 1,
+        text: '할머니는 노래 부르기를 좋아하십니다.',
+        isCorrect: true
+      },
+      {
+        id: 2,
+        text: '우리 가족은 함께 노래 연습을 했습니다.',
+        isCorrect: false
+      },
+      {
+        id: 3,
+        text: '할머니는 가끔 우리를 공연에 초대하십니다.',
+        isCorrect: false
+      },
+      {
+        id: 4,
+        text: '우리 가족은 할머니의 공연을 보러 갔습니다.',
+        isCorrect: false
       }
     ]
   },
