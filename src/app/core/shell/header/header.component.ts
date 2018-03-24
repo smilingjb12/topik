@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 
 import { AuthenticationService } from '../../authentication/authentication.service';
 import { I18nService } from '../../i18n.service';
+import { DarkModeService } from "@app/dark-mode.service";
 
 @Component({
   selector: 'app-header',
@@ -10,14 +11,19 @@ import { I18nService } from '../../i18n.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
+  darkModeEnabled = false;
   menuHidden = true;
 
   constructor(private router: Router,
               private authenticationService: AuthenticationService,
-              private i18nService: I18nService) { }
+              private i18nService: I18nService,
+              private darkModeService: DarkModeService) { }
 
   ngOnInit() { }
+
+  toggleDarkMode() {
+    this.darkModeService.toggleDarkMode();
+  }
 
   toggleMenu() {
     this.menuHidden = !this.menuHidden;

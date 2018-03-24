@@ -2,6 +2,7 @@ import { Component, OnInit, ElementRef, Renderer2 } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TestService } from '../test.service';
 import { Test, Question, Answer } from '../test.model';
+import { DarkModeService } from "@app/dark-mode.service";
 
 @Component({
   selector: 'app-test-view',
@@ -14,7 +15,8 @@ export class TestViewComponent implements OnInit {
   testId: number;
 
   constructor(private testService: TestService,
-    private route: ActivatedRoute) { }
+    private route: ActivatedRoute,
+    public darkModeService: DarkModeService) { }
 
   ngOnInit() {
     window.scrollTo(0, 0);

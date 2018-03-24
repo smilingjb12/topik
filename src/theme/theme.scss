@@ -13,7 +13,7 @@ body {
   margin-top: $spacer;
 
   &.light-bg {
-    background-color: #fff;
+    background-color: $body-bg;
   }
 }
 
