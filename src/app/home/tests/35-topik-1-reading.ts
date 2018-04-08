@@ -94,7 +94,7 @@ export default [
   },
   {
     id: 34,
-    text: '몇 시(       ) 옵니까?',
+    text: '몇 시( ) 옵니까?',
     instructions: reading3439Instructions,
     points: 4,
     answers: [
@@ -122,7 +122,7 @@ export default [
   },
   {
     id: 35,
-    text: '(       )에 갑니다. 우유를 삽니다.',
+    text: '( )에 갑니다. 우유를 삽니다.',
     instructions: reading3439Instructions,
     points: 4,
     answers: [
@@ -150,7 +150,7 @@ export default [
   },
   {
     id: 36,
-    text: '저는 한국어 선생님입니다. 한국어를 (       ).',
+    text: '저는 한국어 선생님입니다. 한국어를 ( ).',
     instructions: reading3439Instructions,
     points: 4,
     answers: [
@@ -178,7 +178,7 @@ export default [
   },
   {
     id: 37,
-    text: '요즘 일이 (       ). 바쁩니다.',
+    text: '요즘 일이 ( ). 바쁩니다.',
     instructions: reading3439Instructions,
     points: 4,
     answers: [
@@ -206,7 +206,7 @@ export default [
   },
   {
     id: 38,
-    text: '산을 좋아합니다. 그래서 등산을 (       ) 합니다.',
+    text: '산을 좋아합니다. 그래서 등산을 ( ) 합니다.',
     instructions: reading3439Instructions,
     points: 4,
     answers: [
@@ -234,7 +234,7 @@ export default [
   },
   {
     id: 39,
-    text: '머리가 깁니다. 그래서 (       ) 싶습니다.',
+    text: '머리가 깁니다. 그래서 ( ) 싶습니다.',
     instructions: reading3439Instructions,
     points: 4,
     answers: [
@@ -433,7 +433,7 @@ export default [
   },
   {
     id: 46,
-    text: '저는 극장에 가지 않고 집에서 혼자 영화를 붑니다. 집에서 영화를 보면 누워서 불 수 있습니다. 그리고 보고 싶은 시간에 불 수 있습니다.',
+    text: '저는 극장에 가지 않고 집에서 혼자 영화를 봅니다. 집에서 영화를 보면 누워서 볼 수 있습니다. 그리고 보고 싶은 시간에 볼 수 있습니다.',
     instructions: reading4648Instructions,
     points: 4,
     answers: [
@@ -444,12 +444,12 @@ export default [
       },
       {
         id: 2,
-        text: '저는 친구와 영화를 붑니다.',
+        text: '저는 친구와 영화를 봅니다.',
         isCorrect: false
       },
       {
         id: 3,
-        text: '저는 극장에서 영화를 붑니다.',
+        text: '저는 극장에서 영화를 봅니다.',
         isCorrect: false
       },
       {
@@ -519,7 +519,7 @@ export default [
     id: 49,
     text: '제 친구는 그림 그리는 것을 좋아합니다. 그래서 시간이 있을 때마다 종이컵에 그림을 그립니다. 그리고 친한 사람들에게 종이컵을 선물합니다. (   ㄱ   ) 종이컵은 세상에 하나만 있습니다. 친구의 종이컵은 참 예쁩니다.',
     instructions: reading4956Instructions,
-    description: '(   ㄱ   )에 들어갈 알맞을 말을 고르십시오.',
+    description: '( ㄱ )에 들어갈 알맞은 말을 고르십시오.',
     points: 4,
     answers: [
       {
@@ -546,7 +546,7 @@ export default [
   },
   {
     id: 50,
-    text: '제 친구는 그림 그리는 것을 좋아합니다. 그래서 시간이 있을 때마다 종이컵에 그림을 그립니다. 그리고 친한 사람들에게 종이컵을 선물합니다. (   ㄱ   ) 종이컵은 세상에 하나만 있습니다. 친구의 종이컵은 참 예쁩니다.',
+    text: '제 친구는 그림 그리는 것을 좋아합니다. 그래서 시간이 있을 때마다 종이컵에 그림을 그립니다. 그리고 친한 사람들에게 종이컵을 선물합니다. ( ㄱ ) 종이컵은 세상에 하나만 있습니다. 친구의 종이컵은 참 예쁩니다.',
     instructions: reading4956Instructions,
     description: '이 글의 내용과 같은 것을 고르십시오.',
     points: 4,
@@ -575,7 +575,7 @@ export default [
   },
   {
     id: 51,
-    text: '몇 십 년 후에는 자동차가 하늘로 다닐 것입니다. 그러면 그 자동차를 만드는 사람이 필요합니다. 그리고 하늘에 자동차가 있으면 하늘에서 일하는 교통경찰도 있어야 합니다. 지금은 이런 사람들을 ( ㄱ ) 없습니다. 하지만 앞으로는 이런 사람들을 자주 불 수 있을 것입니다.',
+    text: '몇 십 년 후에는 자동차가 하늘로 다닐 것입니다. 그러면 그 자동차를 만드는 사람이 필요합니다. 그리고 하늘에 자동차가 있으면 하늘에서 일하는 교통경찰도 있어야 합니다. 지금은 이런 사람들을 ( ㄱ ) 없습니다. 하지만 앞으로는 이런 사람들을 자주 볼 수 있을 것입니다.',
     instructions: reading4956Instructions,
     description: '( ㄱ )에 들어갈 알맞은 말을 고르십시오.',
     points: 4,
@@ -691,9 +691,9 @@ export default [
   },
   {
     id: 55,
-    text: '저는 안경이 여러 개 있습니다. 그래서 그때그때 다른 안경을 씁니다. 사람을 처음 만날 때는 부드러운 느낌의 안경을 씁니다. 운동을 할 때는 가벼운 안경을 씁니다. (ㄱ ) 멋있게 보이고 싶을 때는 유행하는 안경을 씁니다. 이렇게 안경을 바꿔서 쓰면 기분이 좋아집니다.',
+    text: '저는 안경이 여러 개 있습니다. 그래서 그때그때 다른 안경을 씁니다. 사람을 처음 만날 때는 부드러운 느낌의 안경을 씁니다. 운동을 할 때는 가벼운 안경을 씁니다. ( ㄱ ) 멋있게 보이고 싶을 때는 유행하는 안경을 씁니다. 이렇게 안경을 바꿔서 쓰면 기분이 좋아집니다.',
     instructions: reading4956Instructions,
-    description: '( ㄱ )에 들어갈 알맞을 말을 고르십시오.',
+    description: '( ㄱ )에 들어갈 알맞은 말을 고르십시오.',
     points: 4,
     answers: [
       {
@@ -783,7 +783,7 @@ export default [
     text: `(가) 우리 고향에는 딸기가 많이 납니다.
 (나) 그래서 딸기가 많은 4월에 축제를 합니다.
 (다) 그리고 맛있는 딸기를 시장보다 싸게 살 수 있습니다.
-(라) 이 축제에서는 딸기로 여러 가지 음식을 만들어 불 수 있습니다.`,
+(라) 이 축제에서는 딸기로 여러 가지 음식을 만들어 볼 수 있습니다.`,
     instructions: reading5758Instructions,
     points: 4,
     answers: [

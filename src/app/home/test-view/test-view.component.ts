@@ -13,6 +13,7 @@ export class TestViewComponent implements OnInit {
   questions: Question[];
   selectedQuestion: Question;
   testId: number;
+  testTitle: string;
 
   constructor(private testService: TestService,
     private route: ActivatedRoute,
@@ -25,6 +26,9 @@ export class TestViewComponent implements OnInit {
       let questionsType = params['type'];
       this.questions = this.testService.getTestQuestions(this.testId, questionsType);
       this.selectedQuestion = this.testService.getStartupQuestion(this.questions);
+
+      let capitalizedType = questionsType[0].toUpperCase() + questionsType.substr(1);
+      this.testTitle = `${this.testId} TOPIK I (${capitalizedType})`;
     });
   }
 

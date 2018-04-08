@@ -5,7 +5,7 @@ import topikOne35ReadingQuestions from './tests/35-topik-1-reading';
 
 @Injectable()
 export class TestService {
-  private STATE_VERSION_KEY = 'state-3';
+  private STATE_VERSION_KEY = 'state-4';
 
   tests: Test[] = [
     {
